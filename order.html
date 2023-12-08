@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/main.css">
+    <title>Uzum market</title>
+</head>
+<body class="d-flex flex-column index-body">
+    <header class="site-header">
+        <div class="container">
+            <div class="header-top d-flex justify-content-between align-items-center py-4">
+                <a href="./index.html" class="logo-link">
+                    <img src="./images/uzum.svg" width="215" height="32" alt="Uzum site logotipi">
+                </a>
+                <div class="btn-group">
+                    <a href="./index.html" class="btn d-block me-3 ps-4 home-btn">Bosh sahifa</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <main class="site-main flex-grow-1 ">
+        <div class="container">
+            <h1 class="text-center fw-bold ">Your Orders</h1>
+            <ul class="product-list d-flex flex-wrap justify-content-between list-unstyled"></ul>
+            
+            <template class="product-template">
+                <li class="product-item border p-4 rounded mb-5 ">
+                    <img src="" class="product-image rounded" width="270" height="270" alt="">
+                    <span class="product-price d-block w-25 mt-3 mx-auto py-2 text-white rounded text-center bg-primary"></span>
+                    <strong class="product-name d-block text-center my-3"></strong>
+                    <p class="product-desc text-center"></p>
+                    <button class="btn btn-danger delete-btn d-block mx-auto">O'chirish</button>
+                </li>
+            </template>            
+        </div>
+    </main>
+    
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-inner py-5 d-flex justify-content-between">
+                <a href="./index.html">
+                    <img src="./images/uzum.svg" width="215" height="32" alt="Uzum logotipi">
+                </a>
+                <ul class="list-unstyled footer-list">
+                    <li class="mb-2">
+                        <a href="#" class="text-decoration-none text-black">Maxfiylik siyosati</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#" class="text-decoration-none text-black">Yordam</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#" class="text-black text-decoration-none">Muddatli to'lov shartlari</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#" class="text-black text-decoration-none">Biz haqimizda</a>
+                    </li>
+                </ul>
+                <ul class="list-unstyled footer-list">
+                    <li class="mb-3">
+                        <a href="#" class="text-black text-decoration-none">Ommaviy oferta</a>
+                    </li>
+                    <li class="mb-3">
+                        <a href="#" class="text-black text-decoration-none">Eco-friendly</a>
+                    </li>
+                    <li class="mb-3">
+                        <a href="#" class="text-black text-decoration-none">To’lov va yetkazib berish xizmati</a>
+                    </li>
+                </ul>
+                <address>
+                    <strong class="d-block mb-2">Ishonch telefonlari:</strong>
+                    <ul class="list-unstyled footer-list">
+                        <li class="mb-2">
+                            <a href="tel: +998787771515" class="text-decoration-none text-black">+998 78 777-15-15.</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="tel: +998787771515" class="text-decoration-none text-black">+998 78 777-15-15.</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="tel: +998787771515" class="text-decoration-none text-black">+998 78 777-15-15.</a>
+                        </li>
+                    </ul>
+                </address>
+                
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="./js/order.js"></script>
+</body>
+</html>
