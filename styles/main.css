@@ -65,8 +65,22 @@ img {
     opacity: 0.5;
 }
 
-
-
+.site-article {
+    color: #fff;
+    background-color: rgb(135, 83, 224);
+    background-image: url("../images/articlebg.png");
+    background-repeat: no-repeat;
+    background-position: 100px 50px;
+    border-radius: 30px;
+}
+.text-box {
+    width: 600px;
+    margin-left: 470px;
+}
+.text-box h3{
+    font-size: 50px;
+    margin: 20px 0;
+}
 
 
 

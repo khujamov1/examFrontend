@@ -47,6 +47,7 @@ elProductList.addEventListener("click", evt => {
 
 
 async function userGetProccess() {
+try {
     const response = await fetch("http://localhost:5000/product", {
         method: "GET", 
         headers: {
@@ -55,6 +56,9 @@ async function userGetProccess() {
     });
     const data = await response.json();
     renderProduct(data, elProductList);
+} catch (error) {
+    console.log(error);
+}
 }
 userGetProccess();
 

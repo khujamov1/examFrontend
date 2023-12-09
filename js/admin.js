@@ -71,6 +71,7 @@ async function adminEditProccess(url, productSrc, id) {
     } catch (error) {
         console.log(error);
     }
+    localStorage.removeItem("editedId")
 }
 
 async function adminDeleteProccess(url, id) {
@@ -120,9 +121,10 @@ elAdminModalForm.addEventListener("submit", evt => {
     updatedForm.set("product_img", elModalImg.files[0]);
     updatedForm.set("product_price", elModalCost.value.trim());
 
-    const editedId = localStorage.getItem("editedId");
+
     
-    adminEditProccess("http://localhost:5000/product", updatedForm, editedId)
+    adminEditProccess("http://localhost:5000/product", updatedForm, localStorage.getItem("editedId"));
+
 })
 
 elProductList.addEventListener("click", evt => {
